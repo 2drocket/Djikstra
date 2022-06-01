@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=main
+comment0.text=\r\n\ This\ is\ what\ will\ run\ when\ ever\ I\ start\ up\ the\ base\ program\r\n\r\n\ @author\ Blake\ Simmonds\r\n\ @version\ 1\r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ main\r\n
+numComments=2

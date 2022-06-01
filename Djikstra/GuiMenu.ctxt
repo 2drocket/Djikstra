@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=GuiMenu
+comment0.text=\r\n\ This\ is\ the\ graphical\ user\ interface\ portion\ of\ my\ program\ that\ will\ visably\ display\ everything\ on\ the\ screen\r\n\r\n\ @author\ Blake\ Simmonds\r\n\ @version\ 31/05/2022\r\n
+comment1.params=
+comment1.target=GuiMenu()
+numComments=2
