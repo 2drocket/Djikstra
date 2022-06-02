@@ -1,6 +1,11 @@
 #BlueJ class context
 comment0.target=GuiMenu
-comment0.text=\r\n\ This\ is\ the\ graphical\ user\ interface\ portion\ of\ my\ program\ that\ will\ visably\ display\ everything\ on\ the\ screen\r\n\r\n\ @author\ Blake\ Simmonds\r\n\ @version\ 31/05/2022\r\n
-comment1.params=
-comment1.target=GuiMenu()
-numComments=2
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Window\ here.\r\n\r\n\ Author\ -\ Blake\ Simmonds\r\n\ Version\ -\ 2/06/2022\r\n
+comment1.params=e
+comment1.target=void\ actionPerformed(java.awt.event.ActionEvent)
+comment2.params=
+comment2.target=void\ menuDialogBox()
+comment3.params=
+comment3.target=GuiMenu()
+comment3.text=\r\n\ Constructor\ for\ objects\ of\ class\ Window\r\n
+numComments=4
