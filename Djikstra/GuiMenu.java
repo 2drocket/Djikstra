@@ -1,15 +1,16 @@
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
+import java.awt.geom.*;
 import java.util.Scanner;
 import java.io.IOException;
 /**
  * Write a description of class Window here.
  *
  * Author - Blake Simmonds
- * Version - 2/06/2022
+ * Version - 14/06/2022
  */
-public class GuiMenu extends JFrame implements ActionListener
+public class GuiMenu extends JFrame implements ActionListener,MouseListener
 {
     
     // Class variables
@@ -25,6 +26,39 @@ public class GuiMenu extends JFrame implements ActionListener
                 menuDialogBox();
                 break;
         }
+    }
+    
+    public void mouseExited(MouseEvent e) {System.out.println("Exited");}
+    public void mouseEntered(MouseEvent e) {System.out.println("Entered");}
+    public void mouseReleased(MouseEvent e) {System.out.println("Released");}
+    public void mousePressed(MouseEvent e) {System.out.println("Pressed");}
+    public void mouseClicked(MouseEvent e) {
+        int mousex=e.getX();
+        int mousey=e.getY();
+        System.out.println("clicked at "+mousex+", "+mousey);
+    }
+    
+    public void paint (Graphics g) {
+        super.paint(g);
+        Graphics2D g2 = (Graphics2D) g;
+        g2.drawString("I love text",100,70);
+
+        //===================================// Text Drawing on graphics
+
+        int xStart=100;
+        int xEnd=500;
+        int yStart=100;
+        int yEnd=100;
+        Line2D lin = new Line2D.Float(xStart,yStart,xEnd,yEnd); 
+        g2.draw(lin);
+
+        //===================================// Line Drawing on graphics
+
+        g2.fillOval(0010, 040, 100, 100);
+        g2.setColor(Color.RED);
+        g2.drawString("Circle",42,90);
+
+        //===================================// Cirlce Drawing on graphics
     }
     
     void menuDialogBox(){ // dialogue box for settings
@@ -62,6 +96,9 @@ public class GuiMenu extends JFrame implements ActionListener
         
         this.pack();
         this.toFront();
+        this.setExtendedState(MAXIMIZED_BOTH);//this sets it to fullscreen
         this.setVisible(true);
+        
+        addMouseListener(this);
     }
 }

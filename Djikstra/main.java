@@ -5,7 +5,7 @@
  * @author Blake Simmonds
  * @version 1
  */
-public class main
+public class Main
 {
     /**
      * Constructor for objects of class main
