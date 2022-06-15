@@ -45,7 +45,7 @@ public class GuiMenu extends JFrame implements ActionListener,MouseListener
 
         //===================================// Text Drawing on graphics
 
-        int xStart=100;
+        int xStart=101;
         int xEnd=500;
         int yStart=100;
         int yEnd=100;
