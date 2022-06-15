@@ -41,7 +41,7 @@ public class GuiMenu extends JFrame implements ActionListener,MouseListener
     public void paint (Graphics g) {
         super.paint(g);
         Graphics2D g2 = (Graphics2D) g;
-        g2.drawString("I love text",100,70);
+        g2.drawString("I love text",100,71);
 
         //===================================// Text Drawing on graphics
 
