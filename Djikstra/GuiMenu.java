@@ -17,6 +17,11 @@ public class GuiMenu extends JFrame implements ActionListener,MouseListener
     JMenuBar menuBar;
     JMenu menu;
     JMenuItem menuItem;
+    
+    public int y;
+    public int x;
+    
+    
  
     public void actionPerformed(ActionEvent e) {
         String cmd=e.getActionCommand();
@@ -27,7 +32,7 @@ public class GuiMenu extends JFrame implements ActionListener,MouseListener
                 break;
         }
     }
-    
+
     public void mouseExited(MouseEvent e) {System.out.println("Exited");}
     public void mouseEntered(MouseEvent e) {System.out.println("Entered");}
     public void mouseReleased(MouseEvent e) {System.out.println("Released");}
@@ -36,28 +41,35 @@ public class GuiMenu extends JFrame implements ActionListener,MouseListener
         int mousex=e.getX();
         int mousey=e.getY();
         System.out.println("clicked at "+mousex+", "+mousey);
+        
+        x = mousex;
+        y = mousey;
+        this.repaint();
     }
     
     public void paint (Graphics g) {
         super.paint(g);
         Graphics2D g2 = (Graphics2D) g;
-        g2.drawString("I love text",100,71);
+        //g2.drawString("I love text",100,70);
 
         //===================================// Text Drawing on graphics
+
+        //g2.fillRect(9, 54, 2000, 2000);
+
+        //===================================// Background drawing
 
         int xStart=101;
         int xEnd=500;
         int yStart=100;
         int yEnd=100;
         Line2D lin = new Line2D.Float(xStart,yStart,xEnd,yEnd); 
-        g2.draw(lin);
+        //g2.draw(lin);
 
         //===================================// Line Drawing on graphics
-
-        g2.fillOval(0010, 040, 100, 100);
+        
         g2.setColor(Color.RED);
-        g2.drawString("Circle",42,90);
-
+        g2.fillOval(9, 54, 100, 100);
+       
         //===================================// Cirlce Drawing on graphics
     }
     
