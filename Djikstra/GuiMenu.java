@@ -30,6 +30,8 @@ public class GuiMenu extends JFrame implements ActionListener,MouseListener
             case "Help": // Help menu
                 menuDialogBox();
                 break;
+            case "Test":
+                break;
         }
     }
 
@@ -70,7 +72,7 @@ public class GuiMenu extends JFrame implements ActionListener,MouseListener
         g2.setColor(Color.RED);
         g2.fillOval(9, 54, 100, 100);
        
-        //===================================// Cirlce Drawing on graphics
+        //===================================// Circle Drawing on graphics
     }
     
     void menuDialogBox(){ // dialogue box for settings
