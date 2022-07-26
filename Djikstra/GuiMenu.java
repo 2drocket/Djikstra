@@ -20,8 +20,8 @@ public class GuiMenu extends JFrame implements ActionListener,MouseListener
     
     public int y;
     public int x;
-    
-    
+
+    node[] myNodes = new node[8];
  
     public void actionPerformed(ActionEvent e) {
         String cmd=e.getActionCommand();
@@ -46,6 +46,7 @@ public class GuiMenu extends JFrame implements ActionListener,MouseListener
         
         x = mousex;
         y = mousey;
+
         this.repaint();
     }
     
@@ -91,7 +92,7 @@ public class GuiMenu extends JFrame implements ActionListener,MouseListener
      */
     public GuiMenu()
     {
-        setTitle("Djikstra's Algorithm");
+        setTitle("Dijkstra's Algorithm");
         
         this.getContentPane().setPreferredSize(new Dimension(1000,800));
          
